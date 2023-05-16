@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+  }
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET*/
+    .container {
+        width: 75vw;
+        height: 72vh;
+    }
+
+    body {
+        background-color: var(--desaturated-blue);
+        background-size: auto;
+    }
+
+}
+
+@media screen and (min-width: 992px) { /*DEKSTOP*/
+    .container {
+        width: 800px;
+        height: 85vh;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bright-blue);
+        background-size: contain;
+    }
+
+}
